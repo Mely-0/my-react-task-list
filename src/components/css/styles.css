@@ -22,6 +22,10 @@
     margin-left: 10px;
     color: #313734;
 }
+.formu{
+    width: 100%;
+    height: 100%;
+}
 
 .btn-1{
     width: 65%;
@@ -38,34 +42,88 @@
     border-radius: 10px 10px;
     background-color: #45554c;
     color: white;
+    justify-content: center;
+}
+@media(hover:hover){
+    input:hover{
+        background-color: #c7d6ce;
+        color: #242524;
+    }
+
 }
 .contenido{
     width: 100%;
     height: 50%;
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+}
+.cont-not{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.not-taks{
+    align-items:center ;
+}
+.cont-label{
+    width: 100%;
+    height: 20%;
     
 }
-
+.cont-label-1{
+    height: 40%;
+}
 .label{
-    margin-top: 5px;
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
     width: 80%;
-    height: 13%;
+    height: 50%;
     border-radius: 10px 10px;
     background-color: rgba(255, 255, 255, 0.618);
     display: flex;
     gap: 15px;
 }
+.Label-underline{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 80%;
+    height: 30%;
+    border-radius: 10px 10px;
+    background-color: rgba(255, 255, 255, 0.618);
+    display: flex;
+    gap: 15px;
+    text-decoration: line-through;
+}
+.mensaje{
+    width: 30%;
+    margin-left: 30%;
+}
+.new-estado{
+width: 100%;
+text-align: center;
+background-color: rgba(146, 192, 129, 0.579);
+border-radius: 10px 10px;
+color: rgb(0, 0, 0);
+}
 .checkbox-round {
     accent-color: rgb(55, 98, 44);
 }
 .iconos{
-width: 15%;
+width: 10%;
 height: 100%;
 display: flex;
 align-items: center;
 gap: 10px;
+border: none;
+background-color: #45554c;
+color: white;
+border-radius: 5px 5px;
+justify-content: center;
 }
 .cont-footer{
     width: 100%;
