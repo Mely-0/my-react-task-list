@@ -18,7 +18,7 @@ if(estado3){
 
 return (
         <div className='cont-footer'>
-            <h3 className='parrafo'>You hace {localStorage.length}  peding tasks</h3>
+            <h3 className='parrafo'>You have {localStorage.length}  peding tasks</h3>
             <button 
             onClick={handleDelete}
             checked={estado3}

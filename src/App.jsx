@@ -1,5 +1,4 @@
-import {Index} from './components';
-
+import {Index} from './components/Index';
 
 function App() {
   return <div className='contenedor'> 

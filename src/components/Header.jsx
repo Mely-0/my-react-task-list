@@ -1,10 +1,9 @@
 import React from 'react'
 import {useEffectApi} from "./hooks/useEffect"
-
-
+import { useState } from 'react'
 
 export const Header = () => {
-        const {onChange , handleOnSubmit} = useEffectApi();
+        const {onChange , handleOnSubmit,onChange2} = useEffectApi();
     return (
         <div className='titu'>
             <h1 className='titu-h'>Todo App</h1>
@@ -12,12 +11,22 @@ export const Header = () => {
             onSubmit={handleOnSubmit}
             className='formu'>
             <input 
-            placeholder='titulo' 
+            placeholder='Task' 
             type="text"
             className="btn-1" 
-            name="user_name"
-            onChange={onChange} />
-                <input type="submit" className='btn-2' value="Enviar" />
+            name="useruno"
+            onChange={onChange}
+            required />
+            <input 
+            placeholder='Description' 
+            type="text"
+            className="btn-1" 
+            name="userdos"
+            onChange={onChange2}>
+            
+            </input>
+            
+            <input type="submit" className='btn-2' value="Send" />
             </form>
         </div>
     )  

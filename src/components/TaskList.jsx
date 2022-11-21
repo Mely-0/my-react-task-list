@@ -3,17 +3,21 @@ import { Input as Inputs } from '../components/Input'
 export const TaskList = ({ tasks }) => {
 
     tasks = [];
+    let obj
 
     for (const i in localStorage) {
         console.log(i)
-        if(!isNaN(i))
-        tasks.push(localStorage[i])
+        if(!isNaN(i)){
+            obj = JSON.parse(localStorage[i]) 
+            tasks.push({ nombre:obj.nombre, descri: obj.descri } )
+        }
+
     }
 
 
     const buscarid =( tarea )=>{
         for (const i in localStorage) {
-            if (localStorage[i] == tarea){
+            if (JSON.parse(localStorage[i]).nombre == tarea){
                 return i
             }
         }
@@ -33,8 +37,9 @@ export const TaskList = ({ tasks }) => {
             {tasks.map((task, id) => (
             
                 <Inputs key={id}
-                contenido={task}
-                id={buscarid(task)}
+                contenido={task.nombre}
+                contenido2={task.descri}
+                id={buscarid(task.nombre)}
                 />
             ))}
         </div>
