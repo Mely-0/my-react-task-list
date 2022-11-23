@@ -75,9 +75,9 @@ export const Input = (props) => {
                 checked={marcado}
                 onChange={tareaHecha}
                 className='checkbox-round' value="first_checkbox" />
-                Tarea: {contenido}
+                {contenido}
                 <br />
-                Description: {contenido2}
+                {contenido2}
                 <button
                 onClick={() => handleOnClick(id)}
                 className='iconos'>
@@ -109,7 +109,7 @@ export const Input = (props) => {
             <input 
             placeholder='Description' 
             type="text"
-            className="btn-1" 
+            className={claseTitulo2} 
             name="userdos"
             onChange={onChangeDos}>
             </input> 

@@ -11,7 +11,7 @@ export const useEffectApi = () => {
     const handleOnSubmit=(e)=>{ 
 
 
-        if(lista.length < 3 && descripcion.length < 3){
+        if(lista.length < 3 || descripcion.length < 3){
             alert("no acepto valores menores de 3 caracteres")
         }else{
             let c = localStorage.length + 1

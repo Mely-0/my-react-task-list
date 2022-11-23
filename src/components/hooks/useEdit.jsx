@@ -9,15 +9,13 @@ export const useEdit = (id) => {
     
 
     const handleOnSubmit2=()=>{
-    
-        localStorage.setItem( id, JSON.stringify({nombre:lista2, descri: descripcion2 }) )
 
 
-    if(lista2.length <3){
-        alert("no acepto valores menores de 3 caracteres")
-    }else{
-        alert("")
-    }
+        if(lista2.length < 3 || descripcion2.length < 3){
+            alert("no acepto valores menores de 3 caracteres")
+        }else{
+            localStorage.setItem( id, JSON.stringify({nombre:lista2, descri: descripcion2 }) )  
+        }
     }
     
     const onChange =(e)=>{
