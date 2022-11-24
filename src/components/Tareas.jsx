@@ -7,7 +7,7 @@ import { Footer } from './Footer';
 
 import { useState,useEffect } from 'react';
 
-    export const Index = () => {
+    const Tareas = () => {
     const[tasks,setTasks]=useState([]);
 
     useEffect(() => {
@@ -15,16 +15,6 @@ import { useState,useEffect } from 'react';
     setTasks(data)
     },[])
 
-// function createTask(TaskLista){  
-// setTasks ([...tasks,{
-//     id:tasks.length,
-//     lista:TaskLista
-    
-// }
-
-// ])
-
-// }
 return (
     <div className='contenedor-promax'>
     <Header />
@@ -33,3 +23,4 @@ return (
     </div>
 )
 }  
+export default Tareas;

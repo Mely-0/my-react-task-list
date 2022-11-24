@@ -4,7 +4,6 @@ export const TaskList = ({ tasks }) => {
 
     tasks = [];
     let obj
-
     for (const i in localStorage) {
         console.log(i)
         if(!isNaN(i)){
@@ -13,6 +12,7 @@ export const TaskList = ({ tasks }) => {
         }
 
     }
+
 
 
     const buscarid =( tarea )=>{
