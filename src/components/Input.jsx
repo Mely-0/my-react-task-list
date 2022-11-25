@@ -69,12 +69,15 @@ export const Input = (props) => {
     }
     return (
         <div className={claseCont}>
+            <div className='contenedor-label'>
         <label className={claseLabel}>
             <input type="checkbox"
                 onClick={handleOpen}
                 checked={marcado}
                 onChange={tareaHecha}
-                className='checkbox-round' value="first_checkbox" />
+                className='checkbox-round' 
+                value="first_checkbox"
+                />
                 {contenido}
                 <br />
                 {contenido2}
@@ -89,11 +92,9 @@ export const Input = (props) => {
                 className='iconos'>
                 <FaRegEdit />
                 </button>
-        </label>
-        <div className='mensaje'>
-            {abrir ? <h5 className={claseTitulo}> Tarea realizada </h5> : null}
+                </label>
+                    {abrir ? <h5 className={claseTitulo}> Tarea realizada </h5> : null}
         </div>
-        
         {presionado ?<form 
         onSubmit={handleOnSubmit2
         }

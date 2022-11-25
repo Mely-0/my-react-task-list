@@ -8,11 +8,10 @@ const SobreNosotros = () => {
         <h3 >Mi lista de Tarea</h3>
         <hr />
         <p >
-            Mi Lista de tarea es un sistema que pretente ayudarte en procesos
-            rutinarios los cual deseas agendar para recordar en el futuro.
+        Mi producto es una herramienta que te va a permitir una mejor organizacion de tu tiempo y con ello permitir que el dia te rinda de la mejor manera y sea un poco mas productivo , ya sea en el ambito laboral , como en otros contextos de la vida cotidiana. 
             <br />
             Es un sistema que pretende ser interactivo con el usuario para asi
-            facilitar la experiencia de el usuario con una bonita interfaz.
+            facilitar la experiencia de el usuario con una interfaz agradable.
         </p>
         <ul >
             <h4>Cararteristicas que ofrece:</h4>
