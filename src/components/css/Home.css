@@ -40,6 +40,10 @@
     width: 60%;
     text-align: center;
 }
+h4{
+    font-weight: 700;
+    font-size: 15px;
+}
 @media all and (min-width: 800px){
 
     .contenedor-pro{

@@ -1,5 +1,11 @@
 import React from 'react'
 import'./css/sobre.css'
+import {
+    Menu,
+    MenuButton,
+    MenuList,
+    MenuItem,
+    } from '@chakra-ui/react'
 const SobreNosotros = () => {
     return (
         <div className='cont'>
@@ -13,25 +19,27 @@ const SobreNosotros = () => {
             Es un sistema que pretende ser interactivo con el usuario para asi
             facilitar la experiencia de el usuario con una interfaz agradable.
         </p>
-        <ul >
-            <h4>Cararteristicas que ofrece:</h4>
-            <br />
-            <li>Crear Tareas sin limites</li>
-            <li>Buscar Tareas que hayas realizado</li>
-            <li>Tachar tareas Realizadas</li>
-            <li>Eliminar tareas</li>
-            <li>Y más Actualizaciones en el Furuto</li>
-        </ul>
-        <ul>
-            <li>Lenguaje : Javascript </li>
-            <li> Libreria : React </li>
-            <li>Icon :Reac Icon</li>
-        </ul>
+
+        <Menu>
+    <MenuButton >
+    Cararteristicas que ofrece:
+    </MenuButton>
+    <MenuList>
+        <MenuItem>Crear Tareas sin limites</MenuItem>
+        <MenuItem>Buscar Tareas que hayas realizado</MenuItem>
+        <MenuItem>Buscar Tareas que hayas realizado</MenuItem>
+        <MenuItem>Eliminar tareas</MenuItem>
+        <MenuItem>Y más Actualizaciones en el Furuto</MenuItem>
+        <MenuItem>Lenguaje : Javascript</MenuItem>
+        <MenuItem>Libreria : React</MenuItem>
+        <MenuItem>Icon :Reac Icon</MenuItem>
+    </MenuList>  
+    </Menu>
+      
+        </div>
         <h4 >
             Desarrollador : Melany Martinez
         </h4>
-        </div>
-        
         </div>
     )
     }

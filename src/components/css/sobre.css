@@ -1,12 +1,16 @@
 .cont{
-    margin: auto;
+   margin: auto;
+   margin-top: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 80%;
     height: 70%;
     background-color: white;
 }
-.cont-texto{
+.cont-texto-1{
     margin: auto;
-    width: 80%;
+    width: 70%;
     height: 100%;
 }
 .cont-label{
@@ -14,9 +18,17 @@
     height: 20%;
     display: flex;
 }
+h1{
+    font-weight: 700;
+    font-size: 20px;
+}
+h4{
+    font-weight: 700;
+    font-size: 15px;
+}
 @media all and (min-width: 800px){
     .cont{
-        margin: auto;
+        margin-top: 10%;
         width: 60%;
         height: 70%;
         background-color: white;
@@ -30,7 +42,8 @@
 @media all and (min-width: 1280px){
     .cont{
         margin: auto;
-        width: 60%;
+        margin-top: 5%;
+        width: 40%;
         height: 70%;
         background-color: white;
     } 
