@@ -6,12 +6,13 @@
 .contenedor-pro{
     width: 60%;
     height: 20%;
-    background-color: white;
+    background-color: rgb(158, 221, 153);
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-top: 20%;
     margin-left: 20%;
+    border-radius: 10px;
 }
 .formula{
     display: flex;
@@ -27,7 +28,9 @@
     height: 90%;
     border-radius: 5px;
     background-color: rgb(204, 217, 211);
+
 }
+.nombre::placeholder { color:black; }
 .boton{
     border: none;
     width: 20%;
@@ -39,10 +42,12 @@
 .texto{
     width: 60%;
     text-align: center;
+    color: aliceblue;
 }
 h4{
     font-weight: 700;
     font-size: 15px;
+    color: #393f3c !important;
 }
 @media all and (min-width: 800px){
 

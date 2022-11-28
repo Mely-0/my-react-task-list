@@ -1,7 +1,7 @@
 import React from 'react'
 import './css/Home.css'
 import { useState } from 'react';
-import { useEffect } from 'react'
+
 
 
 const Home = () => {
@@ -13,9 +13,9 @@ e.target.user.value="";
 };
 
 return (
-    <div className='contenedor-pro'>
+    <div  className='contenedor-pro'>
     <form className='formula' onSubmit={onSubmit}>
-    <input className='nombre' type="text" placeholder='Introduxca su nombre' name='user'  />
+    <input className='nombre' type="text" placeholder='Introduzca su nombre' name='user'  />
     <button className='boton'>Click</button>
     </form>
     <h4 className='texto'>bienvenido {nombre} </h4>

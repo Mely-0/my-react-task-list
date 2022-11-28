@@ -14,7 +14,7 @@ export const useEffectApi = () => {
         if(lista.length < 3 || descripcion.length < 3){
             alert("no acepto valores menores de 3 caracteres")
         }else{
-            let c = localStorage.length + 1
+            let c = localStorage.length +1
             e.preventDefault(); 
             localStorage.setItem( c , JSON.stringify({nombre:lista, descri: descripcion }) )
             window.location.reload();   

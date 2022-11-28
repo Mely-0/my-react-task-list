@@ -5,11 +5,12 @@ export const TaskList = ({ tasks }) => {
     tasks = [];
     let obj
     for (const i in localStorage) {
-        console.log(i)
-        if(!isNaN(i)){
+
+        if(!isNaN(i) && i != "light" && i != "dark" ){
+            console.log(i)
             obj = JSON.parse(localStorage[i]) 
             tasks.push({ nombre:obj.nombre, descri: obj.descri } )
-        }
+        } 
 
     }
 
@@ -17,14 +18,19 @@ export const TaskList = ({ tasks }) => {
 
     const buscarid =( tarea )=>{
         for (const i in localStorage) {
-            if (JSON.parse(localStorage[i]).nombre == tarea){
-                return i
+            console.log(i)
+            if(!isNaN(i) && i != "light" && i != "dark" ){
+                if (JSON.parse(localStorage[i]).nombre == tarea){
+                    return i
+                }
+
             }
+
         }
 
     }
 
-
+console.log(buscarid("1144") + "es este cv ");
     if (tasks.length === 0) {
         return (
             <div className='cont-not'>
@@ -42,6 +48,7 @@ export const TaskList = ({ tasks }) => {
                 id={buscarid(task.nombre)}
                 />
             ))}
+        
         </div>
     )
 }

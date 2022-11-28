@@ -6,7 +6,11 @@ import {
     MenuList,
     MenuItem,
     } from '@chakra-ui/react'
+    import { useColorMode , useColorModeValue} from '@chakra-ui/react'
 const SobreNosotros = () => {
+
+    const { toggleColorMode } = useColorMode()
+    const color = useColorModeValue('black', 'black')
     return (
         <div className='cont'>
             <div className='cont-texto-1'>
@@ -20,8 +24,8 @@ const SobreNosotros = () => {
             facilitar la experiencia de el usuario con una interfaz agradable.
         </p>
 
-        <Menu>
-    <MenuButton >
+        <Menu color={color}  >
+    <MenuButton  color={color} >
     Cararteristicas que ofrece:
     </MenuButton>
     <MenuList>
@@ -35,7 +39,7 @@ const SobreNosotros = () => {
         <MenuItem>Icon :Reac Icon</MenuItem>
     </MenuList>  
     </Menu>
-      
+
         </div>
         <h4 >
             Desarrollador : Melany Martinez
