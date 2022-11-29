@@ -1,32 +1,36 @@
 import React from 'react'
 import {useEffectApi} from "./hooks/useEffect"
-import { useState } from 'react'
-
+import {  useColorModeValue} from '@chakra-ui/react'
+import { Button } from '@chakra-ui/react'
+import { Input } from '@chakra-ui/react'
+import { Text } from '@chakra-ui/react'
 export const Header = () => {
         const {onChange , handleOnSubmit,onChange2} = useEffectApi();
+        const color = useColorModeValue('Black', 'green')
     return (
         <div className='titu'>
-            <h1 className='titu-h'>Todo App</h1>
+            <Text color={color} as='b'> Todo App</Text>
             <form
             onSubmit={handleOnSubmit}
             className='formu'>
-            <input 
+            <Input 
             placeholder='Task' 
             type="text"
             className="btn-1" 
             name="useruno"
             onChange={onChange}
             required />
-            <input 
+            <Input 
             placeholder='Description' 
             type="text"
             className="btn-1" 
             name="userdos"
             onChange={onChange2}>
             
-            </input>
-            
-            <input type="submit" className='btn-2' value="Send" />
+            </Input>
+            <Button type="submit" className='btn-2'>
+                Send
+            </Button>
             </form>
         </div>
     )  

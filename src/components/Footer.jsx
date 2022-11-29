@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-
+import { Button } from '@chakra-ui/react'
 export const Footer = (props) => {
     const[estado3, setEstado3]= useState(false)
 
@@ -18,14 +18,14 @@ if(estado3){
 
 return (
         <div className='cont-footer'>
-        <button 
+        <Button 
             onClick={handleDelete}
             checked={estado3}
             className='btn-3' 
             type="button" 
             name="boton7" 
             > Clear All
-            </button>
+            </Button>
         </div>
 )
 }
